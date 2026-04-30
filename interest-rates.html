@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interest Rates — Further Finance Group</title>
+  <meta name="description" content="Current indicative home loan interest rates from CBA, ANZ, NAB and Westpac. Updated by Further Finance Group (鉴远金融).">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="container">
+    <a href="index.html" class="logo">
+      <img src="images/logo-ff.png" alt="Further Finance Group">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-dropdown">
+        <a href="about.html">About</a>
+        <ul class="dropdown">
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </li>
+      <li class="nav-dropdown">
+        <a href="#">Services</a>
+        <ul class="dropdown">
+          <li><a href="services/home-loan.html">Home Loan</a></li>
+          <li><a href="services/commercial-loan.html">Commercial Loan</a></li>
+          <li><a href="services/car-loan.html">Car Loan</a></li>
+          <li><a href="services/overseas-loan.html">Overseas Income Loan</a></li>
+          <li><a href="services/construction-loan.html">Construction Loan</a></li>
+          <li><a href="services/smsf-loan.html">SMSF Loan</a></li>
+        </ul>
+      </li>
+      <li><a href="interest-rates.html">Interest Rates</a></li>
+      <li class="nav-dropdown">
+        <a href="#">Tools</a>
+        <ul class="dropdown">
+          <li><a href="https://moneysmart.gov.au/home-loans/mortgage-calculator" target="_blank" rel="noopener">Loan Repayment Calculator</a></li>
+          <li><a href="tools/property-valuation.html">Property Valuation</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html" class="btn-nav">Enquire Now</a></li>
+      <li class="lang"><a href="cn/interest-rates.html">中文</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span>Interest Rates</div>
+    <h1>Current Interest Rates</h1>
+    <p>Indicative rates from Australia's four major banks. Contact us to find the best rate for your specific situation.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+
+    <div style="background:var(--bg);border-radius:12px;padding:20px 24px;margin-bottom:40px;display:flex;gap:16px;align-items:flex-start">
+      <span style="font-size:1.3rem;flex-shrink:0">ℹ️</span>
+      <p style="margin:0;font-size:.875rem">Rates below are <strong style="color:var(--text)">indicative only</strong> and subject to change without notice. Actual rates depend on your loan amount, LVR, and individual lender assessment. Last updated: <strong style="color:var(--text)">April 2026</strong>. <a href="contact.html" style="color:var(--navy);font-weight:600">Contact us</a> for a personalised rate comparison.</p>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab active" data-tab="oo">Owner Occupier</button>
+      <button class="tab" data-tab="inv">Investment</button>
+    </div>
+
+    <!-- Owner Occupier panel -->
+    <div class="tab-panel active" id="oo">
+      <h3 style="color:var(--navy);margin-bottom:20px">Owner Occupier Loans — Principal &amp; Interest</h3>
+      <div class="table-wrap">
+        <table class="rates-table">
+          <thead>
+            <tr>
+              <th>Bank</th>
+              <th>Variable P&amp;I</th>
+              <th>Fixed 1 yr</th>
+              <th>Fixed 2 yr</th>
+              <th>Fixed 3 yr</th>
+              <th>Comparison Rate &#185;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Commonwealth Bank</strong></td>
+              <td><span class="rate">6.17% p.a.</span></td>
+              <td>5.99% p.a.</td>
+              <td>5.89% p.a.</td>
+              <td>5.99% p.a.</td>
+              <td>6.20% p.a.</td>
+            </tr>
+            <tr>
+              <td><strong>ANZ</strong></td>
+              <td><span class="rate">6.14% p.a.</span></td>
+              <td>5.89% p.a.</td>
+              <td>5.79% p.a.</td>
+              <td>5.89% p.a.</td>
+              <td>6.17% p.a.</td>
+            </tr>
+            <tr>
+              <td><strong>NAB</strong></td>
+              <td><span class="rate">6.19% p.a.</span></td>
+              <td>5.99% p.a.</td>
+              <td>5.89% p.a.</td>
+              <td>5.99% p.a.</td>
+              <td>6.22% p.a.</td>
+            </tr>
+            <tr>
+              <td><strong>Westpac</strong></td>
+              <td><span class="rate">6.19% p.a.</span></td>
+              <td>6.09% p.a.</td>
+              <td>5.99% p.a.</td>
+              <td>6.09% p.a.</td>
+              <td>6.23% p.a.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="margin-top:32px">
+        <h3 style="color:var(--navy);margin-bottom:20px">Owner Occupier Loans — Interest Only</h3>
+        <div class="table-wrap">
+          <table class="rates-table">
+            <thead>
+              <tr>
+                <th>Bank</th>
+                <th>Variable IO</th>
+                <th>Fixed 1 yr IO</th>
+                <th>Fixed 2 yr IO</th>
+                <th>Fixed 3 yr IO</th>
+                <th>Comparison Rate &#185;</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Commonwealth Bank</strong></td>
+                <td><span class="rate">6.52% p.a.</span></td>
+                <td>6.19% p.a.</td>
+                <td>6.09% p.a.</td>
+                <td>6.19% p.a.</td>
+                <td>6.55% p.a.</td>
+              </tr>
+              <tr>
+                <td><strong>ANZ</strong></td>
+                <td><span class="rate">6.49% p.a.</span></td>
+                <td>6.09% p.a.</td>
+                <td>5.99% p.a.</td>
+                <td>6.09% p.a.</td>
+                <td>6.52% p.a.</td>
+              </tr>
+              <tr>
+                <td><strong>NAB</strong></td>
+                <td><span class="rate">6.54% p.a.</span></td>
+                <td>6.19% p.a.</td>
+                <td>6.09% p.a.</td>
+                <td>6.19% p.a.</td>
+                <td>6.57% p.a.</td>
+              </tr>
+              <tr>
+                <td><strong>Westpac</strong></td>
+                <td><span class="rate">6.54% p.a.</span></td>
+                <td>6.29% p.a.</td>
+                <td>6.19% p.a.</td>
+                <td>6.29% p.a.</td>
+                <td>6.58% p.a.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Investment panel -->
+    <div class="tab-panel" id="inv">
+      <h3 style="color:var(--navy);margin-bottom:20px">Investment Loans — Principal &amp; Interest</h3>
+      <div class="table-wrap">
+        <table class="rates-table">
+          <thead>
+            <tr>
+              <th>Bank</th>
+              <th>Variable P&amp;I</th>
+              <th>Fixed 1 yr</th>
+              <th>Fixed 2 yr</th>
+              <th>Fixed 3 yr</th>
+              <th>Comparison Rate &#185;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Commonwealth Bank</strong></td>
+              <td><span class="rate">6.57% p.a.</span></td>
+              <td>6.39% p.a.</td>
+              <td>6.29% p.a.</td>
+              <td>6.39% p.a.</td>
+              <td>6.60% p.a.</td>
+            </tr>
+            <tr>
+              <td><strong>ANZ</strong></td>
+              <td><span class="rate">6.54% p.a.</span></td>
+              <td>6.29% p.a.</td>
+              <td>6.19% p.a.</td>
+              <td>6.29% p.a.</td>
+              <td>6.57% p.a.</td>
+            </tr>
+            <tr>
+              <td><strong>NAB</strong></td>
+              <td><span class="rate">6.59% p.a.</span></td>
+              <td>6.39% p.a.</td>
+              <td>6.29% p.a.</td>
+              <td>6.39% p.a.</td>
+              <td>6.62% p.a.</td>
+            </tr>
+            <tr>
+              <td><strong>Westpac</strong></td>
+              <td><span class="rate">6.59% p.a.</span></td>
+              <td>6.49% p.a.</td>
+              <td>6.39% p.a.</td>
+              <td>6.49% p.a.</td>
+              <td>6.63% p.a.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="margin-top:32px">
+        <h3 style="color:var(--navy);margin-bottom:20px">Investment Loans — Interest Only</h3>
+        <div class="table-wrap">
+          <table class="rates-table">
+            <thead>
+              <tr>
+                <th>Bank</th>
+                <th>Variable IO</th>
+                <th>Fixed 1 yr IO</th>
+                <th>Fixed 2 yr IO</th>
+                <th>Fixed 3 yr IO</th>
+                <th>Comparison Rate &#185;</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Commonwealth Bank</strong></td>
+                <td><span class="rate">6.92% p.a.</span></td>
+                <td>6.59% p.a.</td>
+                <td>6.49% p.a.</td>
+                <td>6.59% p.a.</td>
+                <td>6.95% p.a.</td>
+              </tr>
+              <tr>
+                <td><strong>ANZ</strong></td>
+                <td><span class="rate">6.89% p.a.</span></td>
+                <td>6.49% p.a.</td>
+                <td>6.39% p.a.</td>
+                <td>6.49% p.a.</td>
+                <td>6.92% p.a.</td>
+              </tr>
+              <tr>
+                <td><strong>NAB</strong></td>
+                <td><span class="rate">6.94% p.a.</span></td>
+                <td>6.59% p.a.</td>
+                <td>6.49% p.a.</td>
+                <td>6.59% p.a.</td>
+                <td>6.97% p.a.</td>
+              </tr>
+              <tr>
+                <td><strong>Westpac</strong></td>
+                <td><span class="rate">6.94% p.a.</span></td>
+                <td>6.69% p.a.</td>
+                <td>6.59% p.a.</td>
+                <td>6.69% p.a.</td>
+                <td>6.98% p.a.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <p class="rates-note">&#185; Comparison rates are based on a secured loan of $150,000 over 25 years. WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate.</p>
+    <p class="rates-note" style="margin-top:8px">&#9432; Rates shown are indicative and subject to change without notice. Please contact us or visit the relevant bank's website for the most current rates. Further Finance Group is not responsible for errors in rate information above.</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Get a Personalised Rate Comparison</h2>
+    <p>Our brokers can identify cashback offers, discounted rates, and lender promotions not listed here.</p>
+    <a href="contact.html" class="btn btn-primary">Talk to a Broker</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img src="images/logo-ff.png" alt="Further Finance Group">
+        </a>
+        <p>Your trusted mortgage broker since 2005. Access to 20+ banks and financial institutions across Australia.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services/home-loan.html">Home Loan</a></li>
+          <li><a href="services/commercial-loan.html">Commercial Loan</a></li>
+          <li><a href="services/car-loan.html">Car Loan</a></li>
+          <li><a href="services/overseas-loan.html">Overseas Income Loan</a></li>
+          <li><a href="services/construction-loan.html">Construction Loan</a></li>
+          <li><a href="services/smsf-loan.html">SMSF Loan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="interest-rates.html">Interest Rates</a></li>
+          <li><a href="tools/property-valuation.html">Property Valuation</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="cn/index.html">中文版</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="tel:0390085660">03 9008 5660</a></li>
+          <li><a href="mailto:info@furtherfinance.com.au">info@furtherfinance.com.au</a></li>
+          <li><address>386 Burke Road<br>Camberwell VIC 3124</address></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Further Finance Group Pty Ltd. All rights reserved.</span>
+      <span>Australian Credit Licence holder</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Further Finance Group</title>
+  <meta name="description" content="Get in touch with Further Finance Group (鉴远金融). Visit us at 386 Burke Road, Camberwell VIC, call 03 9008 5660, or send an online enquiry.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="container">
+    <a href="index.html" class="logo">
+      <img src="images/logo-ff.png" alt="Further Finance Group">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-dropdown">
+        <a href="about.html">About</a>
+        <ul class="dropdown">
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </li>
+      <li class="nav-dropdown">
+        <a href="#">Services</a>
+        <ul class="dropdown">
+          <li><a href="services/home-loan.html">Home Loan</a></li>
+          <li><a href="services/commercial-loan.html">Commercial Loan</a></li>
+          <li><a href="services/car-loan.html">Car Loan</a></li>
+          <li><a href="services/overseas-loan.html">Overseas Income Loan</a></li>
+          <li><a href="services/construction-loan.html">Construction Loan</a></li>
+          <li><a href="services/smsf-loan.html">SMSF Loan</a></li>
+        </ul>
+      </li>
+      <li><a href="interest-rates.html">Interest Rates</a></li>
+      <li class="nav-dropdown">
+        <a href="#">Tools</a>
+        <ul class="dropdown">
+          <li><a href="https://moneysmart.gov.au/home-loans/mortgage-calculator" target="_blank" rel="noopener">Loan Repayment Calculator</a></li>
+          <li><a href="tools/property-valuation.html">Property Valuation</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html" class="btn-nav">Enquire Now</a></li>
+      <li class="lang"><a href="cn/contact.html">中文</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span>Contact Us</div>
+    <h1>Get in Touch</h1>
+    <p>Ready to start your loan journey? Contact us today for a free, no-obligation consultation.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Contact Details</h3>
+        <div class="info-item">
+          <div class="info-icon">📞</div>
+          <div>
+            <div class="info-label">Phone</div>
+            <div class="info-value"><a href="tel:0390085660">03 9008 5660</a></div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">✉️</div>
+          <div>
+            <div class="info-label">Email</div>
+            <div class="info-value"><a href="mailto:info@furtherfinance.com.au">info@furtherfinance.com.au</a></div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <div>
+            <div class="info-label">Office Address</div>
+            <div class="info-value">386 Burke Road<br>Camberwell VIC 3124</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">🕐</div>
+          <div>
+            <div class="info-label">Business Hours</div>
+            <div class="info-value">Mon – Fri: 9:00 am – 5:30 pm<br>Sat: By appointment</div>
+          </div>
+        </div>
+
+        <div style="margin-top:36px;padding:24px;background:var(--bg);border-radius:12px">
+          <h4 style="color:var(--navy);margin-bottom:10px">Speak to a Broker</h4>
+          <p style="font-size:.875rem;margin:0">Call us during business hours or send an enquiry and we will respond within one business day.</p>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Send an Enquiry</h3>
+        <form class="enquiry-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first_name" placeholder="John" required>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last_name" placeholder="Smith" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="04xx xxx xxx">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="loan-type">Loan Type</label>
+            <select id="loan-type" name="loan_type">
+              <option value="">-- Select a loan type --</option>
+              <option>Home Loan</option>
+              <option>Investment Loan</option>
+              <option>Commercial Loan</option>
+              <option>Car Loan</option>
+              <option>Overseas Income Loan</option>
+              <option>Construction Loan</option>
+              <option>Refinancing</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us about your situation and what you're looking for…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-navy" style="width:100%" data-success="Message sent — we'll be in touch soon!">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img src="images/logo-ff.png" alt="Further Finance Group">
+        </a>
+        <p>Your trusted mortgage broker since 2005. Access to 20+ banks and financial institutions across Australia.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services/home-loan.html">Home Loan</a></li>
+          <li><a href="services/commercial-loan.html">Commercial Loan</a></li>
+          <li><a href="services/car-loan.html">Car Loan</a></li>
+          <li><a href="services/overseas-loan.html">Overseas Income Loan</a></li>
+          <li><a href="services/construction-loan.html">Construction Loan</a></li>
+          <li><a href="services/smsf-loan.html">SMSF Loan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="interest-rates.html">Interest Rates</a></li>
+          <li><a href="tools/property-valuation.html">Property Valuation</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="cn/index.html">中文版</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="tel:0390085660">03 9008 5660</a></li>
+          <li><a href="mailto:info@furtherfinance.com.au">info@furtherfinance.com.au</a></li>
+          <li><address>386 Burke Road<br>Camberwell VIC 3124</address></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Further Finance Group Pty Ltd. All rights reserved.</span>
+      <span>Australian Credit Licence holder</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
