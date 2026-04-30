@@ -4,59 +4,62 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Static bilingual website for **Further Finance (鉴远金融)**, an Australian financial services company.
+Static bilingual website for **Further Finance Group (鉴远金融)**, an Australian mortgage broker in Camberwell, Melbourne.
 
-- Reference site: https://furtherfinance.com.au/
-- GitHub repo: https://github.com/gavinw2006/FurtherFinance (branch: `main`)
-- Git identity: `user.name = 3WE`, `user.email = 3w2026@gmail.com` — set locally in repo after `git init`
-- Push auth: `gh` CLI — run `gh auth setup-git` if push fails
+- GitHub repo: <https://github.com/gavinw2006/FF> (branch: `main`)
+- Git identity: `user.name = 3WE`, `user.email = 3w2026@gmail.com` (set locally)
+- Auto-deploy: Hostinger webhook fires on every push to `main`
+- Always ask permission before `git push`
 
 ## Dev Commands
 
 ```bash
-open index.html          # preview English root
-open cn/index.html       # preview Chinese root
+open index.html        # preview English root
+open cn/index.html     # preview Chinese root
 ```
 
-No build step, no package manager. All files are served directly from disk.
+No build step, no package manager.
 
 ## Structure
 
 ```
 FF/
-├── index.html / about.html / contact.html   # English root pages
-├── services/                                 # English service pages
-├── cn/                                       # Simplified Chinese mirror (identical structure)
-│   ├── index.html / about.html / contact.html
-│   └── services/
-├── css/style.css                            # Single shared stylesheet
-├── js/main.js                               # Single shared script
-└── images/                                  # Logo and assets
+├── index.html / about.html / contact.html / interest-rates.html  # EN root pages
+├── services/          # 6 EN service pages
+├── tools/             # property-valuation.html
+├── cn/                # Full Chinese mirror — same structure as root
+│   ├── services/
+│   └── tools/
+├── css/style.css      # Single shared stylesheet
+├── js/main.js         # Single shared script (nav, tabs, form AJAX)
+└── images/            # logo-ff.png (PNG wordmark)
 ```
 
 ## Relative Path Rules
 
-Every page must reference CSS, JS, and logo hrefs using paths relative to its own depth:
+Every page must use depth-correct relative paths for CSS, JS, and logo:
 
-| Page location               | CSS/JS path             | Logo href          |
-|-----------------------------|-------------------------|--------------------|
-| Root EN (`*.html`)          | `css/style.css`         | `index.html`       |
-| Service EN (`services/`)    | `../css/style.css`      | `../index.html`    |
-| Root CN (`cn/`)             | `../css/style.css`      | `../index.html`    |
-| Service CN (`cn/services/`) | `../../css/style.css`   | `../../index.html` |
+| Location                       | CSS/JS path             | Logo/nav root href   |
+|--------------------------------|-------------------------|----------------------|
+| Root EN (`*.html`)             | `css/style.css`         | `index.html`         |
+| `services/` or `tools/`        | `../css/style.css`      | `../index.html`      |
+| Root CN (`cn/`)                | `../css/style.css`      | `../index.html`      |
+| `cn/services/` or `cn/tools/`  | `../../css/style.css`   | `../../index.html`   |
+
+Footer Company section uses the same depth rules for internal links (e.g. `tools/property-valuation.html` from root, `../tools/property-valuation.html` from `services/`).
 
 ## Bilingual Sync Rule
 
-English (root) and Chinese (`cn/`) must stay in sync at all times — identical structure, fonts, colors, and layout. Any change to an EN page must be mirrored to the corresponding CN page with fully translated content. No mixed-language pages.
+EN and CN must stay in sync — identical structure, layout, and CSS classes. Any change to an EN page must be mirrored to the corresponding CN page with fully translated content. Use Python batch scripts for changes that span many files.
 
-## Code Rules
+## Forms
 
-- Pure static HTML/CSS/JS — no framework, no build tool, no package manager
-- One stylesheet (`css/style.css`), one script (`js/main.js`)
-- Keep the company logo unchanged
-- Keep code minimal — no unused CSS/JS, no abstractions beyond what is needed
+All `<form class="enquiry-form">` elements are handled by `js/main.js`, which POSTs field data as JSON to `https://formsubmit.co/ajax/info@furtherfinance.com.au`. Requirements for each form:
 
-## Git Rules
+- `name` attribute on every `<input>`, `<select>`, `<textarea>`
+- `<input type="hidden" name="_subject" value="…">` to set the email subject
+- Submit button must have `type="submit"` and a `data-success="…"` attribute for the confirmation message
 
-- Always ask permission before `git push`
-- `git init` the repo locally, set the remote to `https://github.com/gavinw2006/FurtherFinance`, and set local git identity before first push
+## Nav Dropdown Behaviour
+
+The Services and Tools dropdowns use a CSS `::after` pseudo-element bridge on `.nav-dropdown` to keep hover active across the gap between the trigger link and the panel. Do not remove it — the submenu becomes unreachable by mouse without it.
