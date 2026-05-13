@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- English pages -->
+  <url>
+    <loc>https://furtherfinance.com.au/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://furtherfinance.com.au/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://furtherfinance.com.au/cn/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://furtherfinance.com.au/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://furtherfinance.com.au/about.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://furtherfinance.com.au/cn/about.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://furtherfinance.com.au/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://furtherfinance.com.au/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://furtherfinance.com.au/cn/contact.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://furtherfinance.com.au/interest-rates.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://furtherfinance.com.au/interest-rates.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://furtherfinance.com.au/cn/interest-rates.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://furtherfinance.com.au/services/home-loan.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://furtherfinance.com.au/services/home-loan.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://furtherfinance.com.au/cn/services/home-loan.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://furtherfinance.com.au/services/commercial-loan.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://furtherfinance.com.au/services/commercial-loan.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://furtherfinance.com.au/cn/services/commercial-loan.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://furtherfinance.com.au/services/car-loan.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://furtherfinance.com.au/services/car-loan.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://furtherfinance.com.au/cn/services/car-loan.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://furtherfinance.com.au/services/overseas-loan.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://furtherfinance.com.au/services/overseas-loan.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://furtherfinance.com.au/cn/services/overseas-loan.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://furtherfinance.com.au/services/construction-loan.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://furtherfinance.com.au/services/construction-loan.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://furtherfinance.com.au/cn/services/construction-loan.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://furtherfinance.com.au/services/smsf-loan.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://furtherfinance.com.au/services/smsf-loan.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://furtherfinance.com.au/cn/services/smsf-loan.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://furtherfinance.com.au/tools/property-valuation.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://furtherfinance.com.au/tools/property-valuation.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://furtherfinance.com.au/cn/tools/property-valuation.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Chinese pages -->
+  <url>
+    <loc>https://furtherfinance.com.au/cn/</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://furtherfinance.com.au/cn/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://furtherfinance.com.au/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://furtherfinance.com.au/cn/about.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://furtherfinance.com.au/cn/contact.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://furtherfinance.com.au/cn/interest-rates.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://furtherfinance.com.au/cn/services/home-loan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://furtherfinance.com.au/cn/services/commercial-loan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://furtherfinance.com.au/cn/services/car-loan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://furtherfinance.com.au/cn/services/overseas-loan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://furtherfinance.com.au/cn/services/construction-loan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://furtherfinance.com.au/cn/services/smsf-loan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://furtherfinance.com.au/cn/tools/property-valuation.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>
